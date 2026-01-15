@@ -4,6 +4,11 @@ En modern och återanvändbar autentiseringsmall med ett snyggt **glassmorphism*
 
 ![Design Preview](assets/bg.png)
 
+## DEMO inloggning
+
+För demo inloggning anger du "user@example.com" och "password123" för att komma vidare till dashboard.html.
+
+
 ## Funktioner
 
 - **Glassmorphism UI**: High-end visuella effekter med suddiga paneler och färgstarka gradienter.
