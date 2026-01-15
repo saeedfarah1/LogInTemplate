@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | LogInTemplate</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Route Guard - Immediate check -->
+    <script type="module" src="js/guard.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="user-profile">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User Avatar" class="user-avatar"
+                    id="user-avatar">
+                <div>
+                    <h1 id="welcome-message"
+                        style="text-align: left; margin: 0; background: none; -webkit-text-fill-color: white;">Hello,
+                        User!</h1>
+                    <p id="user-email" style="color: var(--text-muted);">user@example.com</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="content">
+            <h2 style="margin-bottom: 1rem;">Your Protected Content</h2>
+            <p style="line-height: 1.6; color: var(--text-muted);">
+                Welcome to your secure dashboard. This page is only accessible when you are logged in.
+                You can now access your data, settings, and more.
+            </p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--glass-border);">
+                    <h3 style="font-size: 0.9rem; color: var(--text-muted);">Sessions</h3>
+                    <p style="font-size: 1.5rem; font-weight: 700;">12</p>
+                </div>
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--glass-border);">
+                    <h3 style="font-size: 0.9rem; color: var(--text-muted);">Security Score</h3>
+                    <p style="font-size: 1.5rem; font-weight: 700; color: #10b981;">98%</p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary logout-btn" id="logout-btn">
+                <span>Sign Out</span>
+            </button>
+        </section>
+    </div>
+
+    <!-- UI Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
